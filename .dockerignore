@@ -1,1 +1,4 @@
-.git-crypt.key
+LICENCE.txt
+README.md
+.gitignore
+config.yml
