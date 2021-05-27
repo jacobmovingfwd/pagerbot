@@ -11,6 +11,7 @@ Required Slack Bot Token scopes:
 - chat:write
 - usergroups:write
 - usergroups:read
+- users:read
 
 ## Installation
 
