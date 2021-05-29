@@ -13,7 +13,7 @@ func (u *Updater) Start() {
 // Loop for updater
 // Will call for new data then call the update function
 // Runs on each `updateEvery` interval
-const updateEvery time.Duration = time.Minute * 1
+const updateEvery time.Duration = time.Minute * 5
 
 func (u *Updater) run() {
 	defer u.Wg.Done()
