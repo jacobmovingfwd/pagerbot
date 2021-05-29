@@ -17,7 +17,7 @@ func New(key string) (*Api, error) {
 	a.api = slack.New(key)
 	auth, err := a.api.AuthTest()
 	if err != nil {
-		return &a, fmt.Errorf("Error authenticating with Slack: %s", err)
+		return &a, fmt.Errorf("error authenticating with Slack: %s", err)
 	}
 
 	log.WithFields(log.Fields{

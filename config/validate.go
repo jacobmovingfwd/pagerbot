@@ -9,24 +9,24 @@ import (
 // Validate the configuration file for sanity
 func (c *config) Validate() error {
 	if c.ApiKeys.Slack == "" || c.ApiKeys.Pagerduty.Key == "" {
-		return fmt.Errorf("You must provide API keys for Slack and Pagerduty")
+		return fmt.Errorf("you must provide API keys for Slack and Pagerduty")
 	}
 
 	if c.ApiKeys.Pagerduty.Org == "" {
-		return fmt.Errorf("You must provide an org name for Pagerduty (<org>.pagerduty.com)")
+		return fmt.Errorf("you must provide an org name for Pagerduty (<org>.pagerduty.com)")
 	}
 
 	if len(c.Groups) == 0 {
-		return fmt.Errorf("You must specify at least one group")
+		return fmt.Errorf("you must specify at least one group")
 	}
 
 	for i, group := range c.Groups {
 		if group.Name == "" {
-			return fmt.Errorf("Must specify group name for group %d", i)
+			return fmt.Errorf("must specify group name for group %d", i)
 		}
 
 		if len(group.Schedules) == 0 {
-			return fmt.Errorf("Must specify at least one schedule for group %s", group.Name)
+			return fmt.Errorf("must specify at least one schedule for group %s", group.Name)
 		}
 	}
 
