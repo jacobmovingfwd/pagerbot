@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  docker:
+  build_n_push:
     runs-on: ubuntu-latest
     outputs:
       short_sha: ${{ steps.short_sha.outputs.sha_short }}
