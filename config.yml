@@ -1,22 +1,14 @@
 api_keys:
-  slack: "abcd123"
+  slack: "xoxb-184828202626-2380531161840-Nb9EKbCphF6MHZGwOJRrYF7U" #Demo App on Texasgang
   pagerduty:
-    org: "songkick"
-    key: "qwerty567"
+    org: "texasgang"
+    key: "u+R6URd34XuAGEzjLQwg"
 
 groups:
-  - name: firefighter
+  - name: test1
     schedules:
-      - PAAAAAA
-      - PBBBBBB
+      - P07UK76
     update_message:
       message: ":fire_engine: Your firefighters are %s :fire_engine:"
       channels:
         - general
-  - name: fielder
-    schedules:
-      - PCCCCCC
-    update_message:
-      message: "Your :baseball: TechOps @Fielder :baseball: this week is %s"
-      channels:
-        - team-engineering
